@@ -61,10 +61,11 @@ const Register = () => {
                 placeholder="Email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="px-4 py-3 w-full md:w-96 rounded focus:outline-none text-black"
+                className="px-4 py-3 w-full md:w-96 rounded focus:outline-none text-black bg-white"
+
               />
               <button 
-                className="bg-netflixRed text-white py-3 px-6 rounded font-medium text-xl"
+                className="bg-netflixRed text-white py-3 px-6 rounded font-medium text-xl" 
                 onClick={handleStart}
               >
                 Get Started
