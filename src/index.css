@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --netflix-dark: #000000;
+  --netflix-red: #E50914;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  background-color: var(--netflix-dark);
+  color: white;
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

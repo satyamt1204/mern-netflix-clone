@@ -35,8 +35,9 @@ const MovieList = ({ title }) => {
           className="flex overflow-x-scroll scrollbar-hide ml-12 space-x-2 py-4"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
-          {Array(10).fill().map((_, i) => (
-            <MovieItem key={i} index={i} />
+          {/* Generate 15 movie items to fill the UI */}
+          {Array(6).fill().map((_, i) => (
+            <MovieItem key={i} />
           ))}
         </div>
         

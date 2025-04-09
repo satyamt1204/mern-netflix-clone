@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-netflixBlack' : 'bg-gradient-to-b from-black/70 to-transparent'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black' : 'bg-gradient-to-b from-black/90 to-transparent'}`}>
       <div className="flex items-center justify-between px-12 py-4">
         {/* Left Side */}
         <div className="flex items-center">
@@ -53,10 +53,12 @@ const Navbar = () => {
               <ArrowDropDownIcon className="text-white" />
             </div>
             
-            <div className="absolute right-0 hidden group-hover:block bg-netflixBlack bg-opacity-90 p-4 mt-2 rounded shadow-lg">
+            <div className="absolute right-0 hidden group-hover:block bg-black bg-opacity-90 p-4 mt-2 rounded shadow-lg">
               <ul className="w-48">
                 <li className="py-2 px-2 hover:underline cursor-pointer">Settings</li>
-                <li className="py-2 px-2 hover:underline cursor-pointer">Sign out</li>
+                <li className="py-2 px-2 hover:underline cursor-pointer">
+                  <Link to="/login" className="text-white">Sign out</Link>
+                </li>
               </ul>
             </div>
           </div>

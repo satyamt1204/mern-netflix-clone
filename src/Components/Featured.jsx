@@ -8,7 +8,7 @@ const Featured = ({ type }) => {
         <div className="absolute top-20 left-12 z-20">
           <div className="flex items-center gap-4">
             <span className="text-3xl font-semibold">{type === "movie" ? "Movies" : "TV Shows"}</span>
-            <select className="bg-netflixBlack/50 text-white p-2 border border-white rounded">
+            <select className="bg-black/50 text-white p-2 border border-white rounded">
               <option value="">Genre</option>
               <option value="adventure">Adventure</option>
               <option value="comedy">Comedy</option>
@@ -30,9 +30,9 @@ const Featured = ({ type }) => {
       
       {/* Featured Background Image */}
       <div className="w-full h-full">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent z-10"></div>
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/ab4b0b22-2676-476e-bc0f-a65f2e4a1178/2e2b5af2-4291-4831-9c0c-bddca0bdf0a7/US-en-20231127-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
           alt="Featured"
           className="w-full h-full object-cover"
         />
@@ -40,13 +40,9 @@ const Featured = ({ type }) => {
       
       {/* Featured Content */}
       <div className="absolute left-12 bottom-32 z-20 w-1/3">
-        <img
-          src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJLtD1-MmtR2tLvEULizQIymLME1UIOUZIIVTWo.webp?r=df1"
-          alt="Title"
-          className="w-full max-w-sm mb-6"
-        />
+        <h1 className="text-5xl font-bold mb-4">Avengers: Endgame</h1>
         <p className="text-lg text-white/80 mb-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci repellendus eum quasi illo, velit numquam, maxime tempora sint deleniti, aliquid qui? Facilis, adipisci! Ratione hic repudiandae temporibus eum earum?
+          After the devastating events of the Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.
         </p>
         <div className="flex gap-3">
           <button className="flex items-center gap-2 bg-white text-black px-6 py-2 rounded font-semibold hover:bg-white/80 transition">
